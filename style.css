@@ -333,9 +333,9 @@ header {
   background:
     /* 은은한 라이트 그라디언트 */
     radial-gradient(
-      circle at 30% 20%,
-      rgba(255, 255, 255, 0.35),
-      rgba(255, 255, 255, 0.05) 40%,
+      circle at 40% 30%,
+      rgba(250, 239, 225, 0.35),
+      rgba(255, 255, 255, 0.05) 25%,
       transparent 65%
     ),
     /* 메인 그린 딥그라디언트 */
@@ -344,8 +344,8 @@ header {
       #0e4a34 0%,
       #0b3b29 25%,
       #074731 55%,
-      #0d5c41 80%,
-      #06392a 100%
+      #168e64 80%,
+      #d9efef 100%
     );
 
   /* 유리광택 느낌 */
@@ -356,6 +356,9 @@ header {
 
   /* 부드러운 전환 */
   transition: background 0.6s ease;
+
+  filter: brightness(var(--hero-brightness, 1));
+  transition: filter 0.4s ease;
 }
 
 /* 왼쪽 45% 영역에 콘텐츠 고정 */
